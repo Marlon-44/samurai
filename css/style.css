@@ -1,0 +1,322 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&family=Kolker+Brush&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&family=Kolker+Brush&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=RocknRoll+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f9f6ef;
+    background-image: url("../img/Fondo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-attachment: fixed;
+    overflow: hidden; 
+}
+
+.header{
+    
+    display: flex;
+    width: 100%;
+    padding: 10px 15px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.logo{
+    width: 180px;
+    height: 100px;
+}
+
+#logo-text{
+    font-family: 'Aref Ruqaa Ink', sans-serif;
+    font-size: 50px;
+    letter-spacing: 20px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    float: right;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.menu-list{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    list-style: none;
+    
+}
+.menu-left{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    list-style: none;
+    float: left;
+    align-items: center;
+}
+
+.menu-right{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    list-style: none;
+    align-items: center;
+    right: 0;
+}
+
+label, a, p{
+    font-family: 'rocknroll one', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 2px;
+
+    
+}
+
+.presentation{
+    padding: 20px;
+    margin-left: 5%;
+    margin-top: 2%;
+    float: left;
+    gap: 20px;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+.presentation .title{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 40px;
+}
+
+.presentation .title h1{
+    font-family: 'Outfit', sans-serif;
+    box-sizing: border-box;
+    font-weight: 800;
+    font-size: 120px;
+    color: #000000;
+    box-sizing: border-box;
+}
+
+.presentation .title p{
+    font-size: 16pt;
+    color: #000000;
+    font-weight: lighter;
+    box-sizing: border-box;
+    margin: 0;
+
+}
+.free-trial{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+    justify-content: right;
+    margin-right: 0;
+    float: right;
+    margin-left: auto;
+    box-sizing: border-box;
+}
+
+.free-trial label{
+    font-size: 17pt;
+}
+
+#arrow{
+    width: auto;
+    height: 100px;
+    margin-right: 0;
+    float: right;
+}
+
+.login-section{
+    gap: 20px;
+    box-sizing: border-box;
+    float: left;
+    
+}
+.button{
+    
+    border-radius: 25px;
+    background-color: #de142c;
+    border: none;
+    color: #f9f6ef;
+    text-decoration: none;
+    text-align: center;
+}
+
+#login-button{
+    font-size: 20px;
+    padding: 10px 100px 15px;
+    text-align: center;
+}
+
+.button:hover{
+    background-color: #1f1314;
+    cursor: pointer;
+}
+
+#register-button{
+    
+    padding: 7px 20px
+}
+
+#samurai{
+    height: 90vh;
+    float: right;
+    object-fit: cover;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    position: sticky;
+    z-index: -1;
+    
+}
+
+/*PAGINA DE LOGIN*/
+
+.login{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.login .form-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    gap: 25px;
+    width: 35%;
+}
+.login .login-elements{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap: 20px;
+    width: 100%;
+}
+
+.login-elements a{
+    font-size: 12pt;
+    color: #0000005d;
+    font-weight: lighter;
+    box-sizing: border-box;
+    margin: 0;
+    text-align: right;
+    text-decoration: underline;
+}
+.form-login h1{
+    font-family: 'rocknroll one', sans-serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-bottom: 40px;
+}
+.form-login p{
+    font-family: 'outfit', sans-serif;
+    font-size: 14pt;
+    margin: 0;
+    font-weight: 400;
+}
+.form-login p a{
+    font-family: 'outfit', sans-serif;
+    font-size: 14pt;
+    font-weight: 600;
+    letter-spacing: normal;
+}
+
+
+.form-login input[type="text"],
+.form-login input[type="password"]{
+    font-family: 'outfit', sans-serif;
+    box-sizing: border-box;
+    border: none;
+    width: 100%;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: #0000005e 4px 4px 10px;
+    background-color: #d6e0e9;
+    font-size: 14pt;
+}
+
+.form-login input[type="submit"]{
+
+    font-family: 'outfit', sans-serif;
+    font-size: 18pt;
+    width: 60%;
+    padding: 15px ;
+    color: #f9f6ef;
+    background-color: #de142c;
+    border: none;
+    border-radius: 40px;
+    box-shadow: #0000005e 4px 4px 10px;
+
+}
+
+.form-login input[type="submit"]:hover{
+    background-color: #1f1314;
+    cursor: pointer;
+}
+.sign-google{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.sign-google a{
+    font-family: 'outfit', sans-serif;
+    font-size: 14pt;
+    padding: 15px 30px;
+    background-color: #d6e0e9;
+    border: none;
+    border-radius: 25px;
+    box-shadow: #0000005e 4px 4px 10px;
+}
+.sign-google img{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    height: 20px ;
+    margin-right: 10px;
+}
+
+.login .imagen-login{
+    display: flex;
+    margin: auto;
+    box-sizing: border-box;
+    position: sticky;
+    height: 85vh;
+    width: 45%;
+}
+
+#img-login{
+    display: flex;
+    box-sizing: border-box;
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+    margin:20px ;
+    
+}
+
+
+
+
